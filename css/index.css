@@ -8,7 +8,7 @@ html{
     font-size: 18px;
 }
 body{
-    
+    background: brown;
 }
 .container{
     max-width: 900px;
@@ -25,4 +25,58 @@ h1{
     color: white;
     text-transform: uppercase;
     text-indent: 200px;
+}
+ul{
+    list-style-type: none;
+}
+li:first-child{
+    border-left: none;
+}
+li:last-child{
+    border-right: none;
+}
+li{
+    float: left;
+    width: 12.5%;
+    border: 1px solid white;
+    text-align: center;
+}
+a{
+    background: orange;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: .8rem;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+ul::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.news{
+    width: 50%;
+    float: left;
+    text-align: justify;
+    padding: 10px;
+}
+content::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.kep1{
+    float: left;
+    margin: 5px 5px 5px 0;
+}
+.kep2{
+    float: right;
+    margin: 0 0 0 5px;
+}
+.content{
+    background: white;
 }
